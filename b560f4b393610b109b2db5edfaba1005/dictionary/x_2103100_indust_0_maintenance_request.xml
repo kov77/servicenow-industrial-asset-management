@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7b25387f93610b109b2db5edfaba10e8" extends="task" label="Maintenance Request" max_length="40" name="x_2103100_indust_0_maintenance_request" type="collection">
+        <element label="Resolution notes" max_length="1000" name="resolution_notes" type="string"/>
+        <element label="Equipment" max_length="32" name="equipment" reference="x_2103100_indust_0_equipment" type="reference"/>
+        <element choice="1" label="Maintenance type" max_length="40" name="maintenance_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Corrective" sequence="0" value="corrective"/>
+                <element inactive_on_update="false" label="Preventive" sequence="1" value="preventive"/>
+                <element inactive_on_update="false" label="Emergency" sequence="2" value="emergency"/>
+            </choice>
+        </element>
+        <element label="Downtime hours" max_length="40" name="downtime_hours" type="integer"/>
+    </element>
+</database>

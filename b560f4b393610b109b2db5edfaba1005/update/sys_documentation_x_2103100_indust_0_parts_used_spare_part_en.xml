@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="spare_part" label="Spare Part" language="en" table="x_2103100_indust_0_parts_used">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>spare_part</element>
+            <help/>
+            <hint/>
+            <label>Spare Part</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_parts_used</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:19:10</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Spare Part</sys_name>
+            <sys_package display_value="Industrial Asset Management" source="x_2103100_indust_0">b560f4b393610b109b2db5edfaba1005</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Industrial Asset Management">b560f4b393610b109b2db5edfaba1005</sys_scope>
+            <sys_update_name>sys_documentation_x_2103100_indust_0_parts_used_spare_part_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:19:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

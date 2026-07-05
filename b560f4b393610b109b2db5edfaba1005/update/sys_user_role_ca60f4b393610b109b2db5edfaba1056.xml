@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Full access to equipment, requests, and spare parts inventory</description>
+        <elevated_privilege>false</elevated_privilege>
+        <federated_id>IrkUZrMz5DF/2De1JJJoy0P+3Un/6zuQgQylkn5IBfI=</federated_id>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_2103100_indust_0.asset_manager</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>asset_manager</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-24 21:55:11</sys_created_on>
+        <sys_id>ca60f4b393610b109b2db5edfaba1056</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_2103100_indust_0.asset_manager</sys_name>
+        <sys_package display_value="Industrial Asset Management" source="x_2103100_indust_0">b560f4b393610b109b2db5edfaba1005</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Industrial Asset Management">b560f4b393610b109b2db5edfaba1005</sys_scope>
+        <sys_update_name>sys_user_role_ca60f4b393610b109b2db5edfaba1056</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 21:55:11</sys_updated_on>
+    </sys_user_role>
+</record_update>

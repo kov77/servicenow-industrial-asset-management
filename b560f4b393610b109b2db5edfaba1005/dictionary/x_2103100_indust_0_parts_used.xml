@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a6faba9493714f109b2db5edfaba1010" label="Parts Used" max_length="40" name="x_2103100_indust_0_parts_used" type="collection">
+        <element label="Spare Part" max_length="32" name="spare_part" reference="x_2103100_indust_0_spare_part" type="reference"/>
+        <element label="Maintenance Request" max_length="32" name="maintenance_request" reference="x_2103100_indust_0_maintenance_request" type="reference"/>
+        <element label="Quantity used" max_length="40" name="quantity_used" type="integer"/>
+        <index name="index">
+            <element name="maintenance_request"/>
+        </index>
+        <index name="index2">
+            <element name="spare_part"/>
+        </index>
+    </element>
+</database>

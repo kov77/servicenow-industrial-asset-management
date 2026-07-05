@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="compatible_equipment_type" table="x_2103100_indust_0_spare_part" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>compatible_equipment_type</element>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:57</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>compatible_equipment_type</sys_name>
+            <sys_package display_value="Industrial Asset Management" source="x_2103100_indust_0">b560f4b393610b109b2db5edfaba1005</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Industrial Asset Management">b560f4b393610b109b2db5edfaba1005</sys_scope>
+            <sys_update_name>sys_choice_x_2103100_indust_0_spare_part_compatible_equipment_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:57</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compatible_equipment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Conveyor</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:57</sys_updated_on>
+            <value>conveyor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compatible_equipment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Press Machine</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:58</sys_updated_on>
+            <value>press_machine</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compatible_equipment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compressor</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:58</sys_updated_on>
+            <value>compressor</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compatible_equipment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CNC Machine</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:58</sys_updated_on>
+            <value>cnc_machine</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>compatible_equipment_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Robot Arm</label>
+            <language>en</language>
+            <name>x_2103100_indust_0_spare_part</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-26 21:54:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-26 21:54:58</sys_updated_on>
+            <value>robot_arm</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

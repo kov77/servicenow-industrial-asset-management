@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="eec1747793610b109b2db5edfaba1014" extends="cmdb_ci" label="Equipment" max_length="40" name="x_2103100_indust_0_equipment" type="collection">
+        <element label="Manufacturer" max_length="100" name="equipment_manufacturer" type="string"/>
+        <element choice="1" label="Equipment type" max_length="40" name="equipment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Robot Arm" sequence="4" value="robot_arm"/>
+                <element inactive_on_update="false" label="Compressor" sequence="2" value="compressor"/>
+                <element inactive_on_update="false" label="CNC Machine" sequence="3" value="cnc_machine"/>
+                <element inactive_on_update="false" label="Press Machine" sequence="1" value="press_machine"/>
+                <element inactive_on_update="false" label="Conveyor" sequence="0" value="conveyor"/>
+            </choice>
+        </element>
+        <element label="Last maintenance date" max_length="40" name="last_maintenance_date" type="glide_date_time"/>
+        <element label="Next scheduled maintenance" max_length="40" name="next_scheduled_maintenance" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="c696fc3393a10b109b2db5edfaba1043" label="Spare Part" max_length="40" name="x_2103100_indust_0_spare_part" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Quantity in stock" max_length="40" name="quantity_in_stock" type="integer"/>
+        <element display="true" label="Part name" max_length="40" name="part_name" type="string"/>
+        <element label="Part number" max_length="50" name="part_number" type="string"/>
+        <element label="Unit cost" max_length="40" name="unit_cost" type="currency"/>
+        <element choice="1" label="Compatible equipment type" max_length="40" name="compatible_equipment_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Robot Arm" sequence="4" value="robot_arm"/>
+                <element inactive_on_update="false" label="Compressor" sequence="2" value="compressor"/>
+                <element inactive_on_update="false" label="Conveyor" sequence="0" value="conveyor"/>
+                <element inactive_on_update="false" label="CNC Machine" sequence="3" value="cnc_machine"/>
+                <element inactive_on_update="false" label="Press Machine" sequence="1" value="press_machine"/>
+            </choice>
+        </element>
+    </element>
+</database>
