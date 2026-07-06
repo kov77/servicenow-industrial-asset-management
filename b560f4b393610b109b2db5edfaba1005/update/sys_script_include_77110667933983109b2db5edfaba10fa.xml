@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_2103100_indust_0.EquipmentHelper</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>EquipmentHelper</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EquipmentHelper = Class.create();
+EquipmentHelper.prototype = {
+    initialize: function() {
+    },
+
+    isCompatible: function(equipmentSysId, sparePartCompatibleType) {
+        var equipmentTable = new GlideRecord('x_2103100_indust_0_equipment');
+        if (!equipmentTable.get(equipmentSysId)) {
+            return false;
+        }
+        return equipmentTable.equipment_type == sparePartCompatibleType;
+    },
+
+    type: 'EquipmentHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-07-06 19:28:39</sys_created_on>
+        <sys_id>77110667933983109b2db5edfaba10fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EquipmentHelper</sys_name>
+        <sys_package display_value="Industrial Asset Management" source="x_2103100_indust_0">b560f4b393610b109b2db5edfaba1005</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Industrial Asset Management">b560f4b393610b109b2db5edfaba1005</sys_scope>
+        <sys_update_name>sys_script_include_77110667933983109b2db5edfaba10fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-07-06 19:28:39</sys_updated_on>
+    </sys_script_include>
+</record_update>
