@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Deduct spare part quantity</name>
+        <name>Validate and deduct spare part stock</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -28,29 +28,34 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-    var part = new GlideRecord('x_2103100_indust_0_spare_part');
-    if (part.get(current.spare_part)) {
-        part.quantity_in_stock = part.quantity_in_stock - current.quantity_used;
-        part.update();
-    }
+	var partsTable = new GlideRecord('x_2103100_indust_0_spare_part');
+	if (partsTable.get(current.spare_part)) {
+		if(partsTable.quantity_in_stock < current.quantity_used) {
+			gs.addErrorMessage('Not enough spare parts in stock');
+			current.setAbortAction(true);
+			return;
+		}
+		partsTable.quantity_in_stock = partsTable.quantity_in_stock - current.quantity_used;
+		partsTable.update();
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-07-03 22:23:31</sys_created_on>
+        <sys_created_on>2026-07-06 12:40:04</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>75db8baa937503109b2db5edfaba1094</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Deduct spare part quantity</sys_name>
+        <sys_id>801128e3933d43109b2db5edfaba10ef</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Validate and deduct spare part stock</sys_name>
         <sys_overrides/>
         <sys_package display_value="Industrial Asset Management" source="x_2103100_indust_0">b560f4b393610b109b2db5edfaba1005</sys_package>
         <sys_policy/>
         <sys_scope display_value="Industrial Asset Management">b560f4b393610b109b2db5edfaba1005</sys_scope>
-        <sys_update_name>sys_script_75db8baa937503109b2db5edfaba1094</sys_update_name>
+        <sys_update_name>sys_script_801128e3933d43109b2db5edfaba10ef</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-07-03 22:23:31</sys_updated_on>
+        <sys_updated_on>2026-07-06 13:42:43</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=75db8baa937503109b2db5edfaba1094"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=801128e3933d43109b2db5edfaba10ef"/>
 </record_update>
